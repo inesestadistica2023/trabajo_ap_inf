@@ -1,8 +1,14 @@
 ---
 title: "trabajo_ap_inf"
 author: "Ines Dominguez"
-output: html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
+```{r}
+library(readxl)
+base_datos_ines <- read_excel(path = "base datos ines.xls")
+```
 
 Para este trabajo, contamos con una base de datos de objetos líticos realizados en obsidiana de Mesoamérica (obtenida de Comparative Archaeology Database). Los objetos se dividen en lascas y láminas, y la base de datos cuenta con variables que nos aportan datos sobre la anchura, la longitud, el grosor y el peso de las piezas. La pregunta a la que tenemos que responder es: ¿en base a los parámetros arqueométricos, podemos deducir si una pieza se trata de una lasca o una lámina?.
 
